@@ -13,7 +13,7 @@ import styles from "./welcome.style";
 
 const jobTypes = ["Full-Time", "Part-Time", "Contract"]
 
-const Welcome = () => {
+const Welcome = ({searchTerm, setSearchTerm,  }) => {
   const router = useRouter();
   const [activeJobType, setActiveJobType] = useState("Full-Time")
 
